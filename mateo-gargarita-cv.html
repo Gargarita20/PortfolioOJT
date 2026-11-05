@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV of Mateo Gargarita, full-stack web developer and UI/UX designer.">
+    <title>Mateo Gargarita | CV</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 32px;
+            color: #233247;
+            background: #f3f6fa;
+            font: 16px/1.65 Arial, sans-serif;
+        }
+
+        main {
+            padding: 48px 56px;
+            background: #fff;
+            box-shadow: 0 12px 36px rgb(23 35 56 / 10%);
+        }
+
+        header {
+            padding-bottom: 24px;
+            border-bottom: 2px solid #2879b9;
+        }
+
+        h1 {
+            margin: 0;
+            color: #172338;
+            font-size: 2.4rem;
+            letter-spacing: -0.04em;
+        }
+
+        .role {
+            margin: 6px 0 14px;
+            color: #2879b9;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 18px;
+            color: #637188;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #175c91;
+            text-decoration: none;
+        }
+
+        section {
+            margin-top: 26px;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            color: #172338;
+            font-size: 1.05rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin: 14px 0 2px;
+            color: #233247;
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 4px 0;
+            color: #4c5d73;
+        }
+
+        .muted {
+            color: #637188;
+        }
+
+        ul {
+            margin: 6px 0 0;
+            padding-left: 20px;
+            color: #4c5d73;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 28px;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 16px;
+            border: 0;
+            border-radius: 6px;
+            color: #fff;
+            background: #175c91;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 16px auto;
+                padding: 0 12px;
+            }
+
+            main {
+                padding: 30px 24px;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+
+            .print-button {
+                position: static;
+                margin-bottom: 12px;
+            }
+        }
+
+        @media print {
+            @page {
+                margin: 16mm;
+            }
+
+            body {
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+                font-size: 10.5pt;
+            }
+
+            main {
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .print-button {
+                display: none;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" type="button" onclick="window.print()">Print / Save as PDF</button>
+    <main>
+        <header>
+            <h1>Mateo Gargarita</h1>
+            <p class="role">Full-Stack Web Developer &amp; UI/UX Designer</p>
+            <div class="contact">
+                <a href="mailto:mateogargarita05@gmail.com">mateogargarita05@gmail.com</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Profile</h2>
+            <p>Full-stack web developer and UI/UX designer who enjoys turning ideas into clear, engaging digital experiences. Builds responsive websites with thoughtful interfaces and practical functionality. Interested in learning new tools, solving problems, and contributing to useful web projects.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <p><strong>Frontend:</strong> HTML5, CSS3, Bootstrap 5, JavaScript (ES6+), React</p>
+                <p><strong>Backend:</strong> Node.js, Express.js, REST APIs, WebSockets (Socket.IO)</p>
+                <p><strong>Databases:</strong> MySQL</p>
+                <p><strong>Design:</strong> Figma, wireframing, UI/UX design</p>
+                <p><strong>Tools:</strong> Git, GitHub, VS Code, Vim, Vite</p>
+                <p><strong>Other:</strong> Responsive web design, Linux basics</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project</h2>
+            <h3>Interactive Navigation System for the CIT World Map</h3>
+            <p class="muted">Programmer &amp; Researcher</p>
+            <p>Contributed to the design and implementation of an interactive platform for presenting the institution’s local and international partner establishments, including their locations and partnership details.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>Bachelor of Industrial Technology, Major in Computer Technology</h3>
+            <p>Bulacan State University <span class="muted">| Expected 2027</span></p>
+            <p><strong>Relevant coursework:</strong> Web Development, Database Management Systems, Network Fundamentals, Object-Oriented Programming</p>
+            <p><strong>Academic and leadership experience:</strong> Peer tutoring, teaching assistantships</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -154,7 +154,8 @@ body {
     margin: 24px 0;
 }
 
-.cv button {
+.cv-download {
+    display: block;
     width: 100%;
     padding: 11px 14px;
     border: 0;
@@ -163,11 +164,13 @@ body {
     color: var(--button-text);
     font-size: 0.88rem;
     font-weight: 600;
-    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
     transition: background 160ms ease, transform 160ms ease;
 }
 
-.cv button:hover {
+.cv-download:hover,
+.cv-download:focus-visible {
     transform: translateY(-1px);
     background: var(--accent);
 }
