@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Portfolio</title>
+    <link rel="shortcut icon" href="media/portfolio.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +30,7 @@
                 <li>-- <a href="#projects">View Projects</a></li>
                 <li>-- <a href="#skills">Skills Matrix</a></li>
                 <li>-- <a href="#education">Education</a></li>
-                <li>-- <a href="#availability">Availability</a></li>
+                <!-- <li>-- <a href="#availability">Availability</a></li> -->
             </ul>
         </div>
 
@@ -40,27 +41,45 @@
         <div class="links">
             <h4>Links</h4>
             <div>
-                <a href=""><img src="" alt="Facebook"></a>
-                <a href=""><img src="" alt="Github"></a>
-                <a href=""><img src="" alt="Discord"></a>
-                <!-- <img src="" alt=""> -->
+                <a href="https://www.facebook.com/mateo.gargarita.1">Facebook</a>
+                <a href="https://github.com/Gargarita20">Github</a>
+                <a href="mateogargarita05@gmail.com">Email</a>
             </div>
         </div>
     </div>
 
     <div class="main">
         <section id="bio" class="bio">
-            <div class="bio-content">
+            <div class="bio-wrapper">
+                <div class="bio-content">
                 <h1>Hi I'm Mateo.</h1>
                 <p>I'm Mateo, a full-stack web developer and UI/UX designer who enjoys turning ideas into clear, engaging digital experiences. I build responsive websites with thoughtful interfaces and practical functionality.</p>
                 <p>I'm currently pursuing a Bachelor of Industrial Technology in Computer Technology at Bulacan State University. My studies have helped me build a foundation in web development, databases, networking, and object-oriented programming.</p>
                 <p>I enjoy learning new tools, solving problems, and collaborating with others to create useful products. I'm looking forward to applying my skills, growing through hands-on experience, and contributing to meaningful web projects.</p>
+                </div>
+                <img src="media/picture.jpg" alt="Picture of me">
             </div>
-            <img src="media/picture.jpg" alt="Picture of me">
+            <div id="availability" class="availability">
+                <div class="ojt">
+                    <h2>OJT Details Box</h2>
+                    <h3>Required Hours</h3>
+                    <p>0/600 hours</p>
+                    <p><strong>Availability</strong>: On-site, Remote</p>
+                </div>
+            </div>
         </section>
 
+
         <section id="projects" class="projects">
-                
+            <div class="proj-container">
+                <img src="media/proj1.png" alt="Project 1">
+                <div class="proj-info">
+                    <p class="proj-title">Design and Implementation of an Interactive Navigation System for the CIT World Map</p>
+                    <p class="proj-role">Programmer & Researcher</p>
+                    <p class="proj-intro"> This research aimed to provide an accessible and interactive platform for presenting information about the institution’s local and international partner establishments, including their locations and partnership details.</p>
+                    <a class="proj-link" href="#">Video Demo</a>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="skills">
@@ -89,20 +108,7 @@
             <p>Peer tutoring, teaching assistantships</p>
         </section>
 
-        <section id="availability" class="availability">
-            <div class="ojt">
-                <h2>OJT Details Box</h2>
-                <h3>Required Hours</h3>
-                <p>0/500 hours</p>
-                <p><strong>Availability</strong>: On-site, Remote</p>
-            </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officia distinctio, fuga praesentium omnis non eligendi pariatur architecto sit quas voluptatum a cum deserunt. Facere et sint aspernatur quibusdam officiis.
-
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit rerum expedita adipisci quod! Voluptas error sit quod, est quam non ex, distinctio laborum sequi ullam iste doloremque sapiente nulla tempore.
-            </p>
-            
-        </section>
     </div>
     <script src="script.js" defer></script>
 </body>

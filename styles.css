@@ -220,10 +220,15 @@ body {
 }
 
 .bio {
+    display: block;
+}
+
+.bio-wrapper {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(180px, 30%);
     align-items: center;
     gap: 28px;
+    margin-bottom: 24px;
 }
 
 .main h1,
@@ -300,7 +305,7 @@ body {
         padding: 24px 20px;
     }
 
-    .bio {
+    .bio-wrapper {
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -309,4 +314,48 @@ body {
         max-width: 320px;
         justify-self: center;
     }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 20px;
+}
+
+.proj-container {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: 0 8px 20px var(--card-shadow);
+}
+
+.proj-container img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.proj-info {
+    padding: 16px;
+}
+
+.proj-info .proj-title {
+    color: var(--heading);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.proj-role{
+    font-style: italic;
+}
+
+.proj-intro{
+    margin: 24px 0;
+}
+
+.proj-link{
+    color: aqua;
 }
