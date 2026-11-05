@@ -222,6 +222,29 @@ body {
     display: none;
 }
 
+.footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 8px;
+    border-top: 1px solid var(--card-border);
+    color: var(--body-text);
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+.footer a {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
 .bio {
     display: block;
 }
